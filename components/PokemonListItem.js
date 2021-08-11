@@ -13,7 +13,7 @@ export default function PokemonListItem({ pokemon }) {
           <div className={styles.pokeball}>
             <div className={styles.red}>
               <Image
-                src={`https://pokeres.bastionbot.org/images/pokemon/${array[6]}.png`}
+                src={`https://cdn.traction.one/pokedex/pokemon/${array[6]}.png`}
                 alt={pokemon.name}
                 layout="fill"
                 objectFit="contain"

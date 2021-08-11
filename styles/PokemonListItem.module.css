@@ -34,10 +34,12 @@
   right: 0;
   top: 0;
   bottom: 0;
-  margin-left: auto;
+
+  margin-left: 50%;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
+  transform: translateX(-50%);
   background: #ffff;
   border-radius: 50%;
 }
