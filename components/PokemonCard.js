@@ -7,7 +7,7 @@ export default function PokemonCard({ specie, pokemon }) {
     <div className={styles.pokemon}>
       <div className={styles.img_container}>
         <Image
-          src={`https://pokeres.bastionbot.org/images/pokemon/${specie.id}.png`}
+          src={`https://cdn.traction.one/pokedex/pokemon/${specie.id}.png`}
           alt={specie.name}
           layout="fill"
           objectFit="contain"
