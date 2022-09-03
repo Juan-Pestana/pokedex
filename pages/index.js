@@ -25,78 +25,83 @@ export default function Home({ pokes }) {
   }
 
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Pokedex</title>
-        <meta
-          name="Una Pokedex para Diego y Roque"
-          content="Jugando con Next y React Query"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <>
       <div className={styles.container}>
-        <div className={styles.main}>
-          <div style={{ width: '70%', height: '8rem', position: 'relative' }}>
-            <Image
-              src="/images/TituloUniversoPokemon.png"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
+        <Head>
+          <title>Pokedex</title>
+          <meta
+            name="Una Pokedex para Diego y Roque"
+            content="Jugando con Next y React Query"
+          />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-          <h1 className={styles.title}>
-            Diego y Roque <span>Pokedex</span>
-          </h1>
-
-          <div className={styles.search_input}>
-            <ReactSearchAutocomplete
-              items={data.results}
-              onSelect={handleOnSelect}
-            />
-          </div>
-        </div>
-      </div>
-      <div className={styles.balls}>
-        <div
-          className={styles.pokeball}
-          style={{ transform: 'rotate(-20deg)' }}
-        >
-          <div>
-            <div className={styles.red}>
+        <div className={styles.container}>
+          <div className={styles.main}>
+            <div style={{ width: '70%', height: '8rem', position: 'relative' }}>
               <Image
-                src="/images/Diego.png"
-                alt="Diego"
+                src="/images/TituloUniversoPokemon.png"
                 layout="fill"
                 objectFit="contain"
-                className={styles.image}
+              />
+            </div>
+
+            <h1 className={styles.title}>
+              Diego y Roque <span>Pokedex</span>
+            </h1>
+
+            <div className={styles.search_input}>
+              <ReactSearchAutocomplete
+                items={data.results}
+                onSelect={handleOnSelect}
               />
             </div>
           </div>
-          <div className={styles.white}>
-            <p>DIEGO</p>
-          </div>
-          <div className={styles.innerball}></div>
         </div>
-        <div className={styles.pokeball} style={{ transform: 'rotate(20deg)' }}>
-          <div>
-            <div className={styles.red}>
-              <Image
-                src="/images/roque.png"
-                alt="Roque"
-                layout="fill"
-                objectFit="contain"
-                className={styles.image}
-              />
+        <div className={styles.balls}>
+          <div
+            className={styles.pokeball}
+            style={{ transform: 'rotate(-20deg)' }}
+          >
+            <div>
+              <div className={styles.red}>
+                <Image
+                  src="/images/Diego.png"
+                  alt="Diego"
+                  layout="fill"
+                  objectFit="contain"
+                  className={styles.image}
+                />
+              </div>
             </div>
+            <div className={styles.white}>
+              <p>DIEGO</p>
+            </div>
+            <div className={styles.innerball}></div>
           </div>
-          <div className={styles.white}>
-            <p>ROQUE</p>
+          <div
+            className={styles.pokeball}
+            style={{ transform: 'rotate(20deg)' }}
+          >
+            <div>
+              <div className={styles.red}>
+                <Image
+                  src="/images/roque.png"
+                  alt="Roque"
+                  layout="fill"
+                  objectFit="contain"
+                  className={styles.image}
+                />
+              </div>
+            </div>
+            <div className={styles.white}>
+              <p>ROQUE</p>
+            </div>
+            <div className={styles.innerball}></div>
           </div>
-          <div className={styles.innerball}></div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

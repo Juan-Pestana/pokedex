@@ -16,6 +16,7 @@
   background-color: red;
   height: 50%;
   border-bottom: 5px solid black;
+  position: relative;
 }
 .pokeball :nth-child(2) {
   border-top: 5px solid black;

@@ -11,7 +11,7 @@ export default function PokemonListItem({ pokemon }) {
       <Link href={`/especie/${pokemon.name}`}>
         <a>
           <div className={styles.pokeball}>
-            <div className={styles.red}>
+            <div>
               <Image
                 src={`https://cdn.traction.one/pokedex/pokemon/${array[6]}.png`}
                 alt={pokemon.name}

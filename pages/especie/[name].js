@@ -117,8 +117,16 @@ export default function SpeciePokemon({ specie, pokemon, evolution }) {
 export async function getServerSideProps(context) {
   const { name } = context.params
 
-  const specie = await Specie(name)
-  const pokemon = await getSinglePokemon(name)
+  const responses = await Promise.all([
+    Specie(name),
+    getSinglePokemon(name),
+  ]).then(function (values) {
+    return values
+  })
+
+  const specie = responses[0]
+  const pokemon = responses[1]
+
   const evolution = await evolutions(specie.evolution_chain.url)
   return {
     props: {
