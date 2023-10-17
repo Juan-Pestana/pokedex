@@ -31,7 +31,7 @@ export default function Home({ pokes }) {
           <title>Pokedex</title>
           <meta
             name="Una Pokedex para Diego y Roque"
-            content="Jugando con Next y React Query"
+            content="Con Next y React Query"
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
