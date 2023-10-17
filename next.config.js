@@ -4,6 +4,7 @@ module.exports = {
       'pokeres.bastionbot.org',
       'raw.githubusercontent.com',
       'cdn.traction.one',
+      'img.pokemondb.net',
     ],
   },
   webpack(config) {

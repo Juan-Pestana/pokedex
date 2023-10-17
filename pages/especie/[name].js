@@ -79,7 +79,7 @@ export default function SpeciePokemon({ specie, pokemon, evolution }) {
                     style={{ height: '100px', width: '100px' }}
                   >
                     <Image
-                      src={`https://cdn.traction.one/pokedex/pokemon/${chainItem.id}.png`}
+                      src={`https://img.pokemondb.net/artwork/large/${chainItem.name}.jpg`}
                       alt={specie.name}
                       layout="fill"
                       objectFit="contain"

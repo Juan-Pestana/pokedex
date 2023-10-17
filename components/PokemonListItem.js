@@ -13,7 +13,7 @@ export default function PokemonListItem({ pokemon }) {
           <div className={styles.pokeball}>
             <div>
               <Image
-                src={`https://cdn.traction.one/pokedex/pokemon/${array[6]}.png`}
+                src={`https://img.pokemondb.net/artwork/large/${pokemon.name}.jpg`}
                 alt={pokemon.name}
                 layout="fill"
                 objectFit="contain"
